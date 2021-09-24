@@ -23,19 +23,3 @@ cmake ../
 make
 ```
 
-### Note:
-The CMakeLists is written for macOS build. If you want to build it on Linux just change:
-
-```
-target_link_libraries(
-    TestLabReverse
-	${OpenCV_LIBRARIES}
-    ${PROJECT_SOURCE_DIR}/build/libCoreSLAM.dylib )
-```
-To,
-```
-target_link_libraries(
-    TestLabReverse
-	${OpenCV_LIBRARIES}
-    ${PROJECT_SOURCE_DIR}/build/libCoreSLAM.so )
-```

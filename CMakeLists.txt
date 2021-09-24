@@ -31,7 +31,7 @@ add_executable( TestLabReverse test/TestLabReverse.cpp )
 target_link_libraries(
     TestLabReverse
 	${OpenCV_LIBRARIES}
-    ${PROJECT_SOURCE_DIR}/build/libCoreSLAM.dylib )
+	CoreSLAM )
 
 add_custom_command(
     TARGET TestLabReverse POST_BUILD
